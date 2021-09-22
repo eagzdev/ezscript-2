@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+p {
+font-family: 'Roboto';
+}
+h1 {
+font-family: 'Roboto';
+}
+code {
+font-family: 'Roboto';
+background: grey;
+}
+</style>
+<h1> >addbutton </h1>
+<p>Добавить кнопку к сообщении бота, бот автоматически при добавлении плагина отправляет сообщение "test", если сообщение не указано в плагине, если указано, то отправляет сообщение с кнопкой, как добавить кнопку? <code> >addbutton: 'все могут использувать эту кнопку? (yes/no)', 'ссылка (пропустите, если указанно success)', 'тип кнопки (success, link)', 'текст в кнопке', 'эмодзи (пропустите если не нужно)'; </code></p>
+<h1> >sendmessage </h1>
+<p>Отправить сообщение когда пользователь инжектнит плагин на сервер, как отправить сообщение? <code> >sendmessage: 'ID канала (пропустите если нужен этот канал)', 'сообщение (поддерживает код)'; </code></p>
+<h1> >addreaction </h1>
+<p>Добавить реакцию на сообщение, без <code> >sendmessage </code>, отправляется сообщение "test", как добавить реакцию? <code> >addreactions: 'реакция1', 'реакция2', 'и т.д ...', '...' </code></p>
+<h1> >setvar </h1>
+<p>Изменить переменную, как это работает? <code> >setvar(USER, SERVER, GLOBAL): 'новое значение', 'имя переменной'; </code></p>
+<h1> >getvar </h1>
+<p>Прочитать переменную, <code> >getvar(USER, SERVER, GLOBAL): 'имя переменной';</code></p>
+<h1> >bdscript_command </h1>
+<p>Отправить код на BDScript (Bot Designer Script): <code> >bdscript_command: '$(комманда) и т.д'; </code></p>
+<h1> >then </h1>
+<p>Классическое "тогда" работает если допустим значение 1, а не 2. <code> >then: 'код'; </code></p>
+<h1> >embed </h1>
+<p>Отправить "embed" расширенное сообщение, которое может отправить бот и вебхук. <code> >embed: 'иконка автора', 'авторr', 'заголовок', 'описание', 'футер', 'обложка', 'иконка футера'; </code></p>
+<h1> >ll </h1>
+<p>Отправить сообщение на другом языке программирования "LAN.DS и т.д" <code> >ll: 'название яп (необязвательно)', 'код яп (https://eagzdev.github.com/ezscript/)'; </code></p>
+<br><br>
+<p>Это не всё, весь код <a href="https://eagzdev.github.io/ezscript/">здесь</a></p>
